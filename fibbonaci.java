@@ -1,13 +1,18 @@
-class fibbonaci{  
+import java.util.Scanner ;
+class fibbonaci{ 
 public static void main(String args[])  
 {    
- int n1=0,n2=1,n3,i,count=20;    
- System.out.print(n1+" "+n2);   
+Scanner jumlah = new Scanner(System.in);
+System.out.print("Masukan jumlah angka fibbonacci : ");
+int count = jumlah.nextInt();
+
+ int n1=0,n2=1,n3,i;    
+ System.out.println("fibbonacci ke-1 = "+n1+"\nfibbonacci ke-2 = "+n2);   
     
- for(i=2;i<count;++i)  
+ for(i=3;i<=count;++i)  
  {    
   n3=n1+n2;    
-  System.out.print(" "+n3);    
+  System.out.println("fibbonacci ke-"+i+" = "+n3);    
   n1=n2;    
   n2=n3;    
  }    
